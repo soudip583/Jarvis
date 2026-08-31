@@ -6,14 +6,22 @@ if (fs.existsSync('config.env')) {
   loadEnv('config.env');
 };
 global.contextInfo = {
-    title: "✨🌸L0ver🌸✨",
-    body: "Soudip 🍉",
-    thumbnailUrl: "https://files.catbox.moe/tk5o0n.jpg",
-    renderLargerThumbnail: false,
-    mediaType: 1,
-    mediaUrl: "",
-    sourceUrl: "https://wa.me/917679100323",
-    showAdAttribution: true
+    mentionedJid: [],
+    forwardingScore: 999,
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+        newsletterJid: "120363420999@newsletter",
+        newsletterName: "✨🌸L0ver🌸✨",
+        serverMessageId: 143
+    },
+    externalAdReply: {
+        title: "✨🌸L0ver🌸✨",
+        body: "Soudip 🍉",
+        thumbnailUrl: "https://files.catbox.moe/6d2c0g.jpg",
+        sourceUrl: "https://wa.me/9176791",
+        mediaType: 1,
+        renderLargerThumbnail: true
+    }
 }
 
 global.api = 'https://lokixer.koyeb.app/';
