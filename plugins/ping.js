@@ -19,9 +19,14 @@ System({
     adminAccess: true,
 }, async (message) => {
     const start = new Date().getTime();
-    const ping = await message.send("*𝆺𝅥 running 𝆺𝅥*");
-    const end = new Date().getTime();
-    return await ping.edit("*☇ ꜱᴩᷨᴇͦᴇͭᴅ ☁ :* " + (end - start) + " *ᴍꜱ* ");
+let { key } = await message.send("*. running...")
+const end = new Date().getTime();
+const latency = end - start
+
+return await message.client.sendMessage(message.jid, { 
+    text: `* SPEED ☁️ :* ${latency}ms`,
+    contextInfo: global.contextInfo 
+}, { edit: key })
 });
 
 System({
