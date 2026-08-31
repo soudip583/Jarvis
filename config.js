@@ -5,6 +5,16 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) {
   loadEnv('config.env');
 };
+global.contextInfo = {
+    title: "✨🌸L0ver🌸✨",
+    body: "Soudip 🍉",
+    thumbnailUrl: "https://files.catbox.moe/tk5o0n.jpg",
+    renderLargerThumbnail: false,
+    mediaType: 1,
+    mediaUrl: "",
+    sourceUrl: "https://wa.me/917679100323",
+    showAdAttribution: true
+}
 
 global.api = 'https://lokixer.koyeb.app/';
 
